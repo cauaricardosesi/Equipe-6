@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Caixas de trufas, pacotes de fondue e pedidos de orçamento da Doce Canto.">
+  <title>Doce Canto | Serviços</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <img src="Imagem-Doce-Canto.jpeg" alt="Doce Canto - Doces e Chocolates do Brasil">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="servicos.html" class="ativo">Serviços</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero pequeno">
+      <div class="container">
+        <h1>Nossos Serviços</h1>
+      </div>
+    </div>
+
+    <!-- PENDENTE: o grupo ainda não definiu a lista oficial de serviços.
+         Abaixo estão só os que aparecem nos dados reais (caixas e fondue). -->
+    <section class="fundo-branco" id="servicos">
+      <div class="container">
+        <h2>O que oferecemos</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Caixas de trufas</h3>
+            <p>Caixas com 6 a 12 trufas por R$ 55,00, para presentear ou aproveitar.</p>
+            <a href="produtos.html#trufa">Ver trufas</a>
+          </div>
+          <div class="card">
+            <h3>Pacote Fondue</h3>
+            <p>Caixa com chocolate e frutas para 1 pessoa (R$ 34,99) ou 2 pessoas (R$ 49,00).</p>
+            <a href="produtos.html#fondue">Ver fondue</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contato" id="orcamento">
+      <div class="container">
+        <h2>Peça seu orçamento</h2>
+        <div class="contato-grid">
+
+          <!-- PENDENTE: trocar o e-mail abaixo pelo e-mail da empresa -->
+          <form action="mailto:contato@docecanto.com.br" method="post" enctype="text/plain">
+            <div>
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" required>
+            </div>
+            <div>
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+              <label for="produto">Produto de interesse</label>
+              <select id="produto" name="produto" required>
+                <option value="">Selecione...</option>
+                <option>Barras de chocolate</option>
+                <option>Trufas</option>
+                <option>Brownie</option>
+                <option>Sorvete artesanal</option>
+                <option>Açaí</option>
+                <option>Pacote Fondue</option>
+              </select>
+            </div>
+            <div>
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" required></textarea>
+            </div>
+            <button type="submit">Enviar pedido</button>
+          </form>
+
+          <!-- PENDENTE: trocar pelos dados de contato da empresa -->
+          <div class="info">
+            <p>Endereço: a definir</p>
+            <p>Telefone: a definir</p>
+            <p>E-mail: contato@docecanto.com.br</p>
+            <p>Horário de atendimento: a definir</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 <strong>Doce Canto</strong>. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
